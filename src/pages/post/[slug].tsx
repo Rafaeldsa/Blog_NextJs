@@ -1,14 +1,14 @@
-import { GetStaticPaths, GetStaticProps } from 'next';
-import Head from 'next/head';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { FiCalendar, FiUser, FiClock } from 'react-icons/fi';
-import { format, parseISO } from 'date-fns';
-import { ptBR } from 'date-fns/locale';
 import { RichText } from 'prismic-dom';
 import Prismic from '@prismicio/client';
 
-import Header from '../../components/Header';
+import { GetStaticPaths, GetStaticProps } from 'next';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+
+import { FiCalendar, FiUser, FiClock } from 'react-icons/fi';
+import { format, parseISO } from 'date-fns';
+import { ptBR } from 'date-fns/locale';
+
 import PreviewButton from '../../components/PreviewButton';
 
 import { getPrismicClient } from '../../services/prismic';
